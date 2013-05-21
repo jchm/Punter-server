@@ -2,6 +2,7 @@ var fs      = require('fs');
     express = require('express');
     app     = express();
     mongo = require('mongodb');
+    port    = process.env.PORT || 5000;
 
     app.configure(function () {
         app.use(express.logger('dev'));     /* 'default', 'short', 'tiny', 'dev' */
@@ -67,5 +68,5 @@ app.get('/:id', function(req, res){
    });
 });
 
-app.listen(5000);
+app.listen(port);
 

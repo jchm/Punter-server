@@ -18,7 +18,7 @@ var fs      = require('fs');
    var db = new Db('punten', server);
 
    db.open(function(err, client) {
-       client.authenticate('punten', 'vijfpunten', function(err, success) {
+       client.authenticate('punten', '******', function(err, success) {
            //console.log("Connected to 'punten' database");
        });
    });
